@@ -1,0 +1,27 @@
+ /* nav */
+ .nav__contacts:hover {
+    fill: $accent-color;
+  }
+  
+  .nav__list {
+    margin: 0;
+    display: flex;
+    gap: 50px;
+  }
+  .nav__link--activ {
+    position: relative;
+  }
+  .nav__link--activ::after {
+    content: " ";
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: $accent-color;
+    border-radius: 2px;
+    position: absolute;
+    bottom: -31px;
+  }
+  .nav {
+    display: flex;
+    align-items: center;
+  }
